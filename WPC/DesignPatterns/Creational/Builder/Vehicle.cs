@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPC.DesignPatterns.Creational.Builder
 {
-    public class Vehicle
+    public class Vehicle : ICloneable
     {
         //builder wbudowany w klasę pozwala na zablokowanie metody konstrukcyjnej (prywatna metoda konstrukcyjne) i w ten sposób staje się jednym sposobem wytworzenia obiektu danej klasy
         /*public class VehicleBuilder
@@ -56,6 +56,11 @@ namespace WPC.DesignPatterns.Creational.Builder
         public int Doors { get; set; }
         public int? TrunkCapacity { get; set; }
         public int? EnginePower { get; set; }
+
+        public object Clone()
+        {
+            return MemberwiseClone();
+        }
 
         public override string ToString()
         {

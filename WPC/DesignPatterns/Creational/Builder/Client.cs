@@ -24,6 +24,9 @@ namespace WPC.DesignPatterns.Creational.Builder
             vehicleBuilder.SetDoors(4);
 
             vehicle = vehicleBuilder.Build();
+            vehicle = vehicleBuilder.Build();
+            vehicle.EnginePower = 150;
+            vehicle = vehicleBuilder.Build();
 
             Console.WriteLine(vehicle);
 
