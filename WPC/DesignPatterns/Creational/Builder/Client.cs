@@ -27,6 +27,17 @@ namespace WPC.DesignPatterns.Creational.Builder
             vehicle = vehicleBuilder.Build();
 
             Console.WriteLine(vehicle);
+
+            vehicle = new VehicleBuilder()
+                        .SetWheels(4)
+                        .SetSeats(5)
+                        .SetTrunkCapacity(500)
+                        .SetEnginePower(100)
+                        .SetDoors(4)
+                        .Build();
+
+            Console.WriteLine(vehicle);
+
         }
     }
 }
