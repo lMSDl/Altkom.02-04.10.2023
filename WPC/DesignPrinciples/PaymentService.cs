@@ -5,11 +5,12 @@ namespace WPC.DesignPrinciples
 {
     public class PaymentService
     {
-        public bool Charge(Customer customer, float amount)
+
+        public bool Charge(PaymentAccount account, float amount)
         {
             try
             {
-                customer.PaymentAccount.Charge(amount);
+                account.Charge(amount);
                 return true;
             }
             catch
@@ -18,9 +19,9 @@ namespace WPC.DesignPrinciples
             }
         }
 
-        public void Fund(Customer customer, float amount)
+        public void Fund(PaymentAccount account, float amount)
         {
-            customer?.PaymentAccount?.Fund(amount);
+            account?.Fund(amount);
         }
     }
 }
