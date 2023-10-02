@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesignPrinciples\PaymentAccount.cs" />
+    <Compile Include="DesignPrinciples\CustomerService.cs" />
     <Compile Include="DesignPrinciples\PaymentService.cs" />
     <Compile Include="DesignPrinciples\Customer.cs" />
     <Compile Include="Program.cs" />
