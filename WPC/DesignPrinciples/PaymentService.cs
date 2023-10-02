@@ -7,7 +7,15 @@ namespace WPC.DesignPrinciples
     {
         public bool Charge(Customer customer, float amount)
         {
-            return customer?.PaymentAccount.Charge(amount) ?? false;
+            try
+            {
+                customer.PaymentAccount.Charge(amount);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public void Fund(Customer customer, float amount)

@@ -13,15 +13,16 @@ namespace WPC.DesignPrinciples
         public float AllowedDebit { get; set; }
 
 
-        public bool Charge(float amount)
+        public void Charge(float amount)
         {
             if (Income - Outcome + AllowedDebit < amount)
             {
-                return false;
+                throw new Exception("Not possible");
+                //return false;
             }
 
             Outcome += amount;
-            return true;
+            //return true;
         }
         public void Fund(float amount)
         {
