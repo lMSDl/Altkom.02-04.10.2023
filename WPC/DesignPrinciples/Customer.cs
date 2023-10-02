@@ -16,10 +16,5 @@ namespace DesignPrinciples
         public float Outcome { get; set; }
         public float AllowedDebit { get; set; }
 
-        //public bool HasDebit => Income - Outcome < 0;
-        public bool HasDebit()
-        {
-            return Income - Outcome < 0;
-        }
     }
 }
