@@ -11,7 +11,10 @@ namespace WPC
     {
         static void Main(string[] args)
         {
-            var rectangle = GetRectangle();
+            DesignPatterns.Creational.Builder.Client.Execute();
+
+
+            /*var rectangle = GetRectangle();
 
             var a = 5;
             var b = 3;
@@ -19,7 +22,9 @@ namespace WPC
             rectangle.A = a;
             rectangle.B = b;
 
-            Console.WriteLine($"{a}*{b} = {rectangle.Area}");
+            Console.WriteLine($"{a}*{b} = {rectangle.Area}");*/
+
+
             Console.ReadLine();
         }
 

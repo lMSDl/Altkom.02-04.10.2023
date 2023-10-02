@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesignPatterns\Creational\Builder\Client.cs" />
+    <Compile Include="DesignPatterns\Creational\Builder\Vehicle.cs" />
+    <Compile Include="DesignPatterns\Creational\Builder\VehicleBuilder.cs" />
     <Compile Include="DesignPrinciples\PaymentAccount.cs" />
     <Compile Include="DesignPrinciples\CustomerService.cs" />
     <Compile Include="DesignPrinciples\PaymentService.cs" />
