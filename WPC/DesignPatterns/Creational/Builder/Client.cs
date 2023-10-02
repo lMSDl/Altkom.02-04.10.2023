@@ -16,7 +16,6 @@ namespace WPC.DesignPatterns.Creational.Builder
 
             Console.WriteLine(vehicle);
 
-
             var vehicleBuilder = new VehicleBuilder();
             vehicleBuilder.SetWheels(4);
             vehicleBuilder.SetSeats(5);
@@ -35,9 +34,10 @@ namespace WPC.DesignPatterns.Creational.Builder
                         .SetEnginePower(100)
                         .SetDoors(4)
                         .Build();
-
             Console.WriteLine(vehicle);
 
+            vehicle = new Vehicle { Doors = 4, EnginePower = 100, TrunkCapacity = 500, Seats = 5, Wheels = 4 };
+            Console.WriteLine(vehicle);
         }
     }
 }
