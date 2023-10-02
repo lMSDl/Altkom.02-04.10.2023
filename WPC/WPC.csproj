@@ -49,6 +49,7 @@
     <Compile Include="DesignPrinciples\Customer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SOLID\II_OCP.cs" />
     <Compile Include="SOLID\I_SRP.cs" />
   </ItemGroup>
   <ItemGroup>
