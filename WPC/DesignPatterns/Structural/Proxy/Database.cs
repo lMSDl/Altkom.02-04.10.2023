@@ -23,7 +23,7 @@ namespace WPC.DesignPatterns.Structural.Proxy
             Interlocked.Increment(ref _connectionsCounter);
             Console.WriteLine($"Opening connection {_connectionsCounter}");
 
-            await Task.Delay(1000);
+            await Task.Delay(new Random().Next(500, 2500));
             Console.WriteLine($"Request {@int} completed ({_connectionsCounter})");
             Interlocked.Decrement(ref _connectionsCounter);
             return @int;

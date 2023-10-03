@@ -12,6 +12,11 @@ namespace WPC.DesignPatterns.Structural.Proxy
         {
             IDatabase database = new Database();
 
+            //database = new DatabaseProxy(database);
+            database = new DatabaseProxy(database, () => new Database());
+
+
+
             for (int i = 0; i < 10; i++)
             {
                 _ = database.RequestAsync(i + 1);
