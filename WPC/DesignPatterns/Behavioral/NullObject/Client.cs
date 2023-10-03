@@ -10,7 +10,7 @@ namespace WPC.DesignPatterns.Behavioral.NullObject
     {
         public static void Execute()
         {
-            var objects = new AbstractObject[] { new RealObject(), null };
+            var objects = new AbstractObject[] { new RealObject(), new NullObject() };
 
             var random = new Random();
 
@@ -20,11 +20,9 @@ namespace WPC.DesignPatterns.Behavioral.NullObject
 
                 Console.ReadLine();
 
-                //if (objects[value] != null)
-                {
-                    objects[value]?.Method1();
-                    objects[value]?.Method2();
-                }
+                    objects[value].Method1();
+                    objects[value].Method2();
+                    objects[value].Method3();
             }
         }
     }

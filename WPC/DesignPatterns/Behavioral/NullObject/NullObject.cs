@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace WPC.DesignPatterns.Behavioral.NullObject
 {
-    abstract class AbstractObject
+    class NullObject : AbstractObject
     {
-        public void Method3()
+        public override void Method1()
         {
-            Console.WriteLine("3");
         }
 
-        public virtual void Method1()
+        public override void Method2()
         {
-            Console.WriteLine("1");
         }
-        public abstract void Method2();
+        new public void Method3()
+        {
+        }
     }
 }
