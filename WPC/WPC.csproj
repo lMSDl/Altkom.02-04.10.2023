@@ -60,6 +60,10 @@
     <Compile Include="DesignPatterns\Creational\FactoryMethod\ElevatorGoTo.cs" />
     <Compile Include="DesignPatterns\Creational\FactoryMethod\ElevatorUp.cs" />
     <Compile Include="DesignPatterns\Creational\FactoryMethod\IElevatorOperation.cs" />
+    <Compile Include="DesignPatterns\Creational\ObjectPool\Client.cs" />
+    <Compile Include="DesignPatterns\Creational\ObjectPool\Item.cs" />
+    <Compile Include="DesignPatterns\Creational\ObjectPool\ItemPool.cs" />
+    <Compile Include="DesignPatterns\Creational\ObjectPool\ObjectPool.cs" />
     <Compile Include="DesignPatterns\Creational\Prototype\Address.cs" />
     <Compile Include="DesignPatterns\Creational\Prototype\Client.cs" />
     <Compile Include="DesignPatterns\Creational\Prototype\Person.cs" />
