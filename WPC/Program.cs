@@ -11,7 +11,7 @@ namespace WPC
     {
         static void Main(string[] args)
         {
-            DesignPatterns.Structural.Decorator.Client.Execute();
+            DesignPatterns.Structural.Facade.I.Client.Execute();
 
 
             /*var rectangle = GetRectangle();

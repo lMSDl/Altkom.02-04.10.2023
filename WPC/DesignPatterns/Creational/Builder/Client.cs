@@ -31,11 +31,16 @@ namespace WPC.DesignPatterns.Creational.Builder
             Console.WriteLine(vehicle);
 
             vehicle = new VehicleBuilder()
-                        .SetWheels(4)
-                        .SetSeats(5)
-                        .SetTrunkCapacity(500)
-                        .SetEnginePower(100)
-                        .SetDoors(4)
+                        .Parts
+                            .SetWheels(4)
+                            .SetSeats(5)
+                        .Production
+                            .SetManufacturerName("Altkom")
+                            .SetProductionDate(DateTime.Now)
+                        .Parts
+                            .SetTrunkCapacity(500)
+                            .SetEnginePower(100)
+                            .SetDoors(4)
                         .Build();
             Console.WriteLine(vehicle);
 
