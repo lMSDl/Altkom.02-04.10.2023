@@ -69,6 +69,17 @@
     <Compile Include="DesignPatterns\Creational\Prototype\Person.cs" />
     <Compile Include="DesignPatterns\Creational\Singleton\Client.cs" />
     <Compile Include="DesignPatterns\Creational\Singleton\Context.cs" />
+    <Compile Include="DesignPatterns\Structural\Adapter\II\DbPeopleService.cs" />
+    <Compile Include="DesignPatterns\Structural\Adapter\II\DbPeopleServiceAdapter.cs" />
+    <Compile Include="DesignPatterns\Structural\Adapter\II\DbPerson.cs" />
+    <Compile Include="DesignPatterns\Structural\Adapter\II\IPeopleService.cs" />
+    <Compile Include="DesignPatterns\Structural\Adapter\II\Person.cs" />
+    <Compile Include="DesignPatterns\Structural\Adapter\I\Circle.cs" />
+    <Compile Include="DesignPatterns\Structural\Adapter\I\Client.cs" />
+    <Compile Include="DesignPatterns\Structural\Adapter\I\ICircle.cs" />
+    <Compile Include="DesignPatterns\Structural\Adapter\I\Square.cs" />
+    <Compile Include="DesignPatterns\Structural\Adapter\I\SquareToCircleConverter.cs" />
+    <Compile Include="DesignPatterns\Structural\Adapter\I\SquareToICircleAdapter.cs" />
     <Compile Include="DesignPrinciples\PaymentAccount.cs" />
     <Compile Include="DesignPrinciples\CustomerService.cs" />
     <Compile Include="DesignPrinciples\PaymentService.cs" />

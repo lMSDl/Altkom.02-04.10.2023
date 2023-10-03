@@ -11,7 +11,7 @@ namespace WPC
     {
         static void Main(string[] args)
         {
-            DesignPatterns.Creational.ObjectPool.Client.Execute();
+            DesignPatterns.Structural.Adapter.I.Client.Execute();
 
 
             /*var rectangle = GetRectangle();
