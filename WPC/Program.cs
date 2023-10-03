@@ -11,7 +11,7 @@ namespace WPC
     {
         static void Main(string[] args)
         {
-            DesignPatterns.Structural.Flyweight.Client.Execute();
+            DesignPatterns.Structural.Proxy.Client.Execute();
 
 
             /*var rectangle = GetRectangle();
