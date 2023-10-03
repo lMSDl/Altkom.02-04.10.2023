@@ -92,6 +92,16 @@
     <Compile Include="DesignPatterns\Structural\Bridge\I\Red.cs" />
     <Compile Include="DesignPatterns\Structural\Bridge\I\Shape.cs" />
     <Compile Include="DesignPatterns\Structural\Bridge\I\Triangle.cs" />
+    <Compile Include="DesignPatterns\Structural\Composite\Box.cs" />
+    <Compile Include="DesignPatterns\Structural\Composite\Client.cs" />
+    <Compile Include="DesignPatterns\Structural\Composite\Composite.cs" />
+    <Compile Include="DesignPatterns\Structural\Composite\Cookie.cs" />
+    <Compile Include="DesignPatterns\Structural\Composite\IComponent.cs" />
+    <Compile Include="DesignPatterns\Structural\Composite\Leaf.cs" />
+    <Compile Include="DesignPatterns\Structural\Composite\Shelf.cs" />
+    <Compile Include="DesignPatterns\Structural\Composite\Tea.cs" />
+    <Compile Include="DesignPatterns\Structural\Composite\Toy.cs" />
+    <Compile Include="DesignPatterns\Structural\Composite\Warehouse.cs" />
     <Compile Include="DesignPrinciples\PaymentAccount.cs" />
     <Compile Include="DesignPrinciples\CustomerService.cs" />
     <Compile Include="DesignPrinciples\PaymentService.cs" />
