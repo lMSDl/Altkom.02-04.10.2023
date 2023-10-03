@@ -63,6 +63,8 @@
     <Compile Include="DesignPatterns\Creational\Prototype\Address.cs" />
     <Compile Include="DesignPatterns\Creational\Prototype\Client.cs" />
     <Compile Include="DesignPatterns\Creational\Prototype\Person.cs" />
+    <Compile Include="DesignPatterns\Creational\Singleton\Client.cs" />
+    <Compile Include="DesignPatterns\Creational\Singleton\Context.cs" />
     <Compile Include="DesignPrinciples\PaymentAccount.cs" />
     <Compile Include="DesignPrinciples\CustomerService.cs" />
     <Compile Include="DesignPrinciples\PaymentService.cs" />
@@ -80,5 +82,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
