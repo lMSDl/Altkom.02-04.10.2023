@@ -102,6 +102,12 @@
     <Compile Include="DesignPatterns\Structural\Composite\Tea.cs" />
     <Compile Include="DesignPatterns\Structural\Composite\Toy.cs" />
     <Compile Include="DesignPatterns\Structural\Composite\Warehouse.cs" />
+    <Compile Include="DesignPatterns\Structural\Decorator\BaseDecorator.cs" />
+    <Compile Include="DesignPatterns\Structural\Decorator\Client.cs" />
+    <Compile Include="DesignPatterns\Structural\Decorator\EmailNotification.cs" />
+    <Compile Include="DesignPatterns\Structural\Decorator\INotification.cs" />
+    <Compile Include="DesignPatterns\Structural\Decorator\Notification.cs" />
+    <Compile Include="DesignPatterns\Structural\Decorator\SmsNotification.cs" />
     <Compile Include="DesignPrinciples\PaymentAccount.cs" />
     <Compile Include="DesignPrinciples\CustomerService.cs" />
     <Compile Include="DesignPrinciples\PaymentService.cs" />
