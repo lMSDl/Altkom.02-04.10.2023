@@ -46,6 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\II\Button.cs" />
+    <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\II\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\II\Component.cs" />
+    <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\II\Container.cs" />
+    <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\II\Frame.cs" />
+    <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\II\TextBox.cs" />
+    <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\I\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\I\DiscountHandler.cs" />
+    <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\I\IDiscountHandler.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Client.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Factories.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Interfaces.cs" />
