@@ -1,16 +1,38 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace WPC.DesignPatterns.Behavioral.Memento
 {
-    class Person : ICloneable, IRestorable<Person>
+    class Person : ICloneable, IRestorable<Person>, INotifyPropertyChanged
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        private string firstName;
+        private string lastName;
+
+        public string FirstName
+        {
+            get => firstName;
+            set
+            {
+                firstName = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(FirstName)));
+            }
+        }
+        public string LastName
+        {
+            get => lastName;
+            set
+            {
+                lastName = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(LastName)));
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public object Clone()
         {

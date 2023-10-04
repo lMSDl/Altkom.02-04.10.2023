@@ -43,7 +43,7 @@ namespace WPC.DesignPatterns.Behavioral.Memento
             }
         }
 
-        private void RestoreState(Memento<T> memento)
+        protected virtual void RestoreState(Memento<T> memento)
         {
             originator.Restore(memento.GetState());
             Console.WriteLine($"Caretaker: restored {memento.DateTime}");
