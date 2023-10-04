@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace WPC.DesignPatterns.Behavioral.Visitor.I
 {
-    class PlainText : IElement
+    interface IVisitor
     {
-        public string Text { get; set; }
-
-        public void Accept(IVisitor visitor)
-        {
-            visitor.Visit(this);
-        }
+        void Visit(BoldText element);
+        void Visit(PlainText element);
+        void Visit(Hyperlink element);
     }
 }

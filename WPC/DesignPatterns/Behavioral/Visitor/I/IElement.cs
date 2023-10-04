@@ -8,6 +8,6 @@ namespace WPC.DesignPatterns.Behavioral.Visitor.I
 {
     interface IElement
     {
-        string ToHtml();
+        void Accept(IVisitor visitor);
     }
 }

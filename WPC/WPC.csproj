@@ -122,8 +122,10 @@
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\Logger.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\I\BoldText.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\I\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\I\HtmlVisitor.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\I\Hyperlink.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\I\IElement.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\I\IVisitor.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\I\PlainText.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Client.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Factories.cs" />

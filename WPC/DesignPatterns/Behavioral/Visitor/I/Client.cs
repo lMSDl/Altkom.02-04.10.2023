@@ -19,10 +19,13 @@ namespace WPC.DesignPatterns.Behavioral.Visitor.I
                 new Hyperlink() {Text = "Hyperlink",  Link=@"https:\\some.url.pl"},
 };
 
+            var visitor = new HtmlVisitor();
             foreach (var item in collection)
             {
-                Console.Write(item.ToHtml());
+                item.Accept(visitor);
             }
+
+            Console.WriteLine(visitor);
         }
     }
 }
