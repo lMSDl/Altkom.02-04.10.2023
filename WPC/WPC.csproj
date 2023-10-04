@@ -119,6 +119,7 @@
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\FileLogger.cs" />
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\FileService.cs" />
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\LogEntity.cs" />
+    <Compile Include="DesignPatterns\Behavioral\TemplateMethod\Logger.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Client.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Factories.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Interfaces.cs" />

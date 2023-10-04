@@ -6,33 +6,28 @@ using System.Threading.Tasks;
 
 namespace WPC.DesignPatterns.Behavioral.TemplateMethod
 {
-    class DbLogger
+    class DbLogger : Logger<LogEntity, DbService>
     {
-        private DbService dbService = new DbService();
-
-        public void Log(string message)
+        protected override void Save(DbService service, LogEntity messageToLog)
         {
-            var messageToLog = SerializeMessage(message);
-            ConnectToDatabase();
-            InsertLogMessageToTable(messageToLog);
-            CloseDbConnection();
+            service.Log(messageToLog);
         }
-        private LogEntity SerializeMessage(object message)
+
+        protected override LogEntity PrepareLog(string message)
         {
             Console.WriteLine("Serializing message");
-            return new LogEntity { Message = message.ToString() };
+            return new LogEntity { Message = message.ToString(), DateTime = DateTime.Now };
         }
-        private void ConnectToDatabase()
+
+        protected override DbService OpenService()
         {
             Console.WriteLine("Connecting to Database.");
+            return new DbService();
         }
-        private void InsertLogMessageToTable(LogEntity entity)
+
+        protected override string AddTimestamp(string message)
         {
-            dbService.Log(entity);
-        }
-        private void CloseDbConnection()
-        {
-            dbService.Dispose();
+            return message;
         }
     }
 }

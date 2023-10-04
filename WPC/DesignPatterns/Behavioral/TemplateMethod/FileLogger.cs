@@ -6,34 +6,23 @@ using System.Threading.Tasks;
 
 namespace WPC.DesignPatterns.Behavioral.TemplateMethod
 {
-    class FileLogger
+    class FileLogger : Logger<string, FileService>
     {
-
-
-        public void Log(object message)
+        protected override void Save(FileService service, string messageToLog)
         {
-            string messageToLog = SerializeMessage(message);
-            var service = OpenFile();
-            WriteLogMessage(messageToLog, service);
-            CloseFile(service);
+            service.Appen(messageToLog);
         }
-        private string SerializeMessage(object message)
+
+        protected override string PrepareLog(string message)
         {
             Console.WriteLine("Serializing message");
             return message.ToString();
         }
-        private FileService OpenFile()
+
+        protected override FileService OpenService()
         {
             Console.WriteLine("Opening File.");
             return new FileService();
-        }
-        private void WriteLogMessage(string message, FileService fileService)
-        {
-            fileService.Appen(message);
-        }
-        private void CloseFile(FileService fileService)
-        {
-            fileService.Dispose();
         }
     }
 }

@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 
 namespace WPC.DesignPatterns.Behavioral.TemplateMethod
 {
-    class EmailLogger
+    class EmailLogger : Logger<string, IDisposable>
     {
-        public void Log(object message)
+        protected override void Save(IDisposable _, string messageToLog)
         {
-            string messageToLog = SerializeMessage(message);
-            SendLogToEmail(messageToLog);
+            Console.WriteLine("Sending Email with Log Message : " + messageToLog);
         }
-        private string SerializeMessage(object message)
+
+        protected override string PrepareLog(string message)
         {
             Console.WriteLine("Serializing message");
             return message.ToString();
-        }
-        private void SendLogToEmail(string message)
-        {
-            Console.WriteLine("Sending Email with Log Message : " + message);
         }
     }
 }
