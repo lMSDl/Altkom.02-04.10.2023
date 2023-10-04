@@ -18,5 +18,13 @@ namespace WPC.DesignPatterns.Behavioral.TemplateMethod
             Console.WriteLine("Serializing message");
             return message.ToString();
         }
+
+        protected override void OnServceOpen()
+        {
+        }
+
+        protected override void OnSaving()
+        {
+        }
     }
 }

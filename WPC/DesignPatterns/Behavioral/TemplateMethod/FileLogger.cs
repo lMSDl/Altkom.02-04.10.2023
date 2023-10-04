@@ -24,5 +24,13 @@ namespace WPC.DesignPatterns.Behavioral.TemplateMethod
             Console.WriteLine("Opening File.");
             return new FileService();
         }
+
+        protected override void OnServceOpen()
+        {
+        }
+
+        protected override void OnSaving()
+        {
+        }
     }
 }

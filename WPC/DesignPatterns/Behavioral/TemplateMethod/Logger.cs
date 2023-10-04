@@ -13,10 +13,22 @@ namespace WPC.DesignPatterns.Behavioral.TemplateMethod
         {
             message = AddTimestamp(message);
             T messageToLog = PrepareLog(message);
+            OnServceOpen();
             using (TService service = OpenService())
             {
+                OnSaving();
                 Save(service, messageToLog);
+
+                OnDisposing();
             }
+        }
+
+        protected abstract void OnServceOpen();
+        protected abstract void OnSaving();
+
+        protected virtual void OnDisposing()
+        {
+
         }
 
         protected virtual string AddTimestamp(string message)
