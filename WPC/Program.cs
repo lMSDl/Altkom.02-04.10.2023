@@ -11,7 +11,7 @@ namespace WPC
     {
         static void Main(string[] args)
         {
-            DesignPatterns.Behavioral.Memento.Client.Execute();
+            DesignPatterns.Behavioral.Observer.Client.Execute();
 
 
             /*var rectangle = GetRectangle();
