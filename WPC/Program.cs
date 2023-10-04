@@ -11,7 +11,7 @@ namespace WPC
     {
         static void Main(string[] args)
         {
-            DesignPatterns.Behavioral.TemplateMethod.Client.Execute();
+            DesignPatterns.Behavioral.Visitor.I.Client.Execute();
 
 
             /*var rectangle = GetRectangle();

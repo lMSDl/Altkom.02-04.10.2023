@@ -29,5 +29,13 @@ namespace WPC.DesignPatterns.Behavioral.TemplateMethod
         {
             return message;
         }
+
+        protected override void OnServceOpen()
+        {
+        }
+
+        protected override void OnSaving()
+        {
+        }
     }
 }
