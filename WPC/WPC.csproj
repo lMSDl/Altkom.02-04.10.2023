@@ -112,6 +112,13 @@
     <Compile Include="DesignPatterns\Behavioral\Strategy\DivideStrategy.cs" />
     <Compile Include="DesignPatterns\Behavioral\Strategy\MultiplyStrategy.cs" />
     <Compile Include="DesignPatterns\Behavioral\Strategy\PlusStrategy.cs" />
+    <Compile Include="DesignPatterns\Behavioral\TemplateMethod\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\TemplateMethod\DbLogger.cs" />
+    <Compile Include="DesignPatterns\Behavioral\TemplateMethod\DbService.cs" />
+    <Compile Include="DesignPatterns\Behavioral\TemplateMethod\EmailLogger.cs" />
+    <Compile Include="DesignPatterns\Behavioral\TemplateMethod\FileLogger.cs" />
+    <Compile Include="DesignPatterns\Behavioral\TemplateMethod\FileService.cs" />
+    <Compile Include="DesignPatterns\Behavioral\TemplateMethod\LogEntity.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Client.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Factories.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Interfaces.cs" />
