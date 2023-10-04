@@ -99,6 +99,12 @@
     <Compile Include="DesignPatterns\Behavioral\Observer\SubscriberB.cs" />
     <Compile Include="DesignPatterns\Behavioral\Observer\SubscriberA.cs" />
     <Compile Include="DesignPatterns\Behavioral\Observer\Subscription.cs" />
+    <Compile Include="DesignPatterns\Behavioral\State\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\State\CoffeeMachine.cs" />
+    <Compile Include="DesignPatterns\Behavioral\State\HeatingUpState.cs" />
+    <Compile Include="DesignPatterns\Behavioral\State\IdleState.cs" />
+    <Compile Include="DesignPatterns\Behavioral\State\State.cs" />
+    <Compile Include="DesignPatterns\Behavioral\State\WorkingState.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Client.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Factories.cs" />
     <Compile Include="DesignPatterns\Creational\AbstractFactory\Interfaces.cs" />
