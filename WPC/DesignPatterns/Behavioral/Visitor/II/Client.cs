@@ -23,7 +23,9 @@ namespace WPC.DesignPatterns.Behavioral.Visitor.II
                 foreach (var product in products)
                 {
                     //problem "double-dispatch"
-                    basket.Add(product);
+                    //basket.Add(product);
+
+                    product.Accept(basket);
                 }
             }
         }

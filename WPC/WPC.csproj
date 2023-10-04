@@ -124,6 +124,8 @@
     <Compile Include="DesignPatterns\Behavioral\Visitor\II\BoxedProduct.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\II\Cart.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\II\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\II\IElement.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\II\IVisitor.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\II\Product.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\I\BoldText.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\I\Client.cs" />
