@@ -77,6 +77,12 @@
     <Compile Include="DesignPatterns\Behavioral\Iterator\Buffer.cs" />
     <Compile Include="DesignPatterns\Behavioral\Iterator\BufferIterator.cs" />
     <Compile Include="DesignPatterns\Behavioral\Iterator\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Mediator\ChatBot.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Mediator\ChatMember.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Mediator\ChatUser.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Mediator\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Mediator\IMediator.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Mediator\Mediator.cs" />
     <Compile Include="DesignPatterns\Behavioral\NullObject\AbstractObject.cs" />
     <Compile Include="DesignPatterns\Behavioral\NullObject\Client.cs" />
     <Compile Include="DesignPatterns\Behavioral\NullObject\NullObject.cs" />
