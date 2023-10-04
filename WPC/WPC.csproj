@@ -120,6 +120,11 @@
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\FileService.cs" />
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\LogEntity.cs" />
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\Logger.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\II\Basket.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\II\BoxedProduct.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\II\Cart.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\II\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Visitor\II\Product.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\I\BoldText.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\I\Client.cs" />
     <Compile Include="DesignPatterns\Behavioral\Visitor\I\HtmlVisitor.cs" />
