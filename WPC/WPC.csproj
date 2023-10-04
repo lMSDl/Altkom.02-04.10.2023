@@ -55,6 +55,7 @@
     <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\I\Client.cs" />
     <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\I\DiscountHandler.cs" />
     <Compile Include="DesignPatterns\Behavioral\ChainOfResponsibility\I\IDiscountHandler.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Command\Garden.cs" />
     <Compile Include="DesignPatterns\Behavioral\NullObject\AbstractObject.cs" />
     <Compile Include="DesignPatterns\Behavioral\NullObject\Client.cs" />
     <Compile Include="DesignPatterns\Behavioral\NullObject\NullObject.cs" />
