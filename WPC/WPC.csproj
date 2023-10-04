@@ -83,6 +83,12 @@
     <Compile Include="DesignPatterns\Behavioral\Mediator\Client.cs" />
     <Compile Include="DesignPatterns\Behavioral\Mediator\IMediator.cs" />
     <Compile Include="DesignPatterns\Behavioral\Mediator\Mediator.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Memento\AutoCaretaker.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Memento\Caretaker.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Memento\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Memento\IRestorable.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Memento\Memento.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Memento\Person.cs" />
     <Compile Include="DesignPatterns\Behavioral\NullObject\AbstractObject.cs" />
     <Compile Include="DesignPatterns\Behavioral\NullObject\Client.cs" />
     <Compile Include="DesignPatterns\Behavioral\NullObject\NullObject.cs" />
